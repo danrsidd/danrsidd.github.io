@@ -187,6 +187,11 @@ video {
     border: 0;
 }
 
+.card-title {
+    color: crimson;
+    font-weight: bold;
+}
+
 .list-group-item {
     font-weight: bold;
 }
