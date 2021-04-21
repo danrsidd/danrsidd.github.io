@@ -2,15 +2,15 @@
 
 :root {
     --primary-color: #000025;
-    /*Navy*/
-    --secondary-color: #1172b6;
-    /*Medium Blue*/
-    --lighter-color: rgb(115, 158, 228);
-    /*Light Blue*/
+    /*000025*/
+    --secondary-color: #33d1a0;
+    /*1172b6*/
+    --lighter-color: #1172b6;
+    /*rgb(115, 158, 228)*/
     --highlight-color: rgb(255, 174, 0);
     /*Yellow*/
-    --success-color: #29bb89;
-    /* 010038 */
+    --success-color: #33d1a0;
+    /* 29bb89 */
 }
 
 html,
@@ -31,7 +31,7 @@ nav {
     margin: 1% 5% 0% 5%;
     padding: 0% 7%;
     /* Navbar border */
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 .navbar-brand {
@@ -139,7 +139,7 @@ video {
     width: 100vw;
     z-index: 1;
     background: var(--primary-color);
-    opacity: 0.88;
+    opacity: 0.85;
 }
 
 .header-content {
@@ -183,18 +183,34 @@ video {
 
 .section-heading {
     color: white;
-    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .projects-container {
-    padding: 2% 10%;
+    padding: 0 10%;
 }
 
-.card,
 .card img,
 .card a {
     border-radius: 0;
     border: 0;
+}
+
+.card {
+    border: 2px solid var(--secondary-color);
+    border-radius: 0;
+    transition: transform 0.2s;
+}
+
+.card-body {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.card:hover {
+    -webkit-transform: scale(1.03);
+    /* Safari 3-8 */
+    transform: scale(1.03);
 }
 
 .card-title {
@@ -203,6 +219,8 @@ video {
 }
 
 .list-group-item {
+    background-color: var(--primary-color);
+    color: white;
     font-weight: bold;
 }
 
@@ -236,7 +254,7 @@ video {
 }
 
 .tag::before {
-    background: #fff;
+    background: var(--primary-color);
     border-radius: 10px;
     box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
     content: "";
@@ -248,7 +266,7 @@ video {
 }
 
 .tag::after {
-    background: #fff;
+    background: var(--primary-color);
     border-bottom: 13px solid transparent;
     border-left: 10px solid crimson;
     border-top: 13px solid transparent;
@@ -263,11 +281,12 @@ video {
 }
 
 .btn-success {
+    color: var(--primary-color);
     background-color: var(--success-color);
 }
 
 .btn-dark {
-    background-color: var(--secondary-color);
+    background-color: var(--lighter-color);
 }
 
 
@@ -294,6 +313,16 @@ video {
     color: var(--primary-color);
 }
 
+#email {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+#email:hover {
+    border-color: white;
+    color: white;
+}
+
 #contact .service-item {
     text-align: center;
     margin: 0px -15px;
@@ -312,14 +341,11 @@ video {
 }
 
 #contact .github {
-    background-color: var(--secondary-color);
+    background-color: var(--lighter-color);
 }
 
-#contact .service-item .icon {
-    width: 250px;
-    height: 250px;
-    display: inline-block;
-    background-color: transparent;
+.say-hi {
+    color: var(--primary-color);
 }
 
 
@@ -461,7 +487,7 @@ video {
 
 .about {
     height: 101vh;
-    background-color: var(--secondary-color);
+    background-color: var(--lighter-color);
 }
 
 .projects {
@@ -472,7 +498,7 @@ video {
 a.anchor {
     display: block;
     position: relative;
-    top: -75px;
+    top: -90px;
     visibility: hidden;
 }
 
