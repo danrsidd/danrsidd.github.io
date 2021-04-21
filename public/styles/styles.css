@@ -1,8 +1,9 @@
 /* ROOT & BODY START */
 
 :root {
-    --primary-color: #000025;
+    --primary-color: rgb(0, 31, 63);
     /*000025*/
+    /* rgb(0, 31, 63) */
     --secondary-color: #33d1a0;
     /*1172b6*/
     --lighter-color: #1172b6;
@@ -139,7 +140,7 @@ video {
     width: 100vw;
     z-index: 1;
     background: var(--primary-color);
-    opacity: 0.85;
+    opacity: 0.93;
 }
 
 .header-content {
@@ -199,7 +200,6 @@ video {
 .card {
     border: 2px solid var(--secondary-color);
     border-radius: 0;
-    transition: transform 0.2s;
 }
 
 .card-body {
@@ -207,25 +207,16 @@ video {
     background-color: var(--primary-color);
 }
 
-.card:hover {
-    -webkit-transform: scale(1.03);
-    /* Safari 3-8 */
-    transform: scale(1.03);
-}
-
 .card-title {
-    color: crimson;
+    color: white;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .list-group-item {
     background-color: var(--primary-color);
     color: white;
-    font-weight: bold;
-}
-
-.buttons-container {
-    padding-top: 20px;
+    /* font-weight: bold; */
 }
 
 .tags {
@@ -240,7 +231,7 @@ video {
 }
 
 .tag {
-    background: crimson;
+    background: var(--lighter-color);
     border-radius: 3px 0 0 3px;
     color: white;
     display: inline-block;
@@ -268,7 +259,7 @@ video {
 .tag::after {
     background: var(--primary-color);
     border-bottom: 13px solid transparent;
-    border-left: 10px solid crimson;
+    border-left: 10px solid var(--lighter-color);
     border-top: 13px solid transparent;
     content: "";
     position: absolute;
