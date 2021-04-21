@@ -70,6 +70,16 @@ nav .navbar-nav li a {
     background: var(--primary-color);
 }
 
+.white-hamburger {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler {
+    border: 0;
+    border-radius: 0;
+}
+
 
 /* NAVBAR END */
 
