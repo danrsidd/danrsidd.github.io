@@ -1,22 +1,14 @@
 /* ROOT & BODY START */
 
 :root {
-    --primary-color: rgb(0, 31, 63);
-    /*000025*/
-    /* rgb(0, 31, 63) */
-    --secondary-color: #33d1a0;
-    /*1172b6*/
+    --dark-color: rgb(0, 31, 63);
     --lighter-color: #1172b6;
-    /*rgb(115, 158, 228)*/
-    --highlight-color: rgb(255, 174, 0);
-    /*Yellow*/
-    --success-color: #33d1a0;
-    /* 29bb89 */
+    --green-color: #33d1a0;
 }
 
 html,
 body {
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
@@ -28,7 +20,7 @@ body {
 /* NAVBAR START */
 
 nav {
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
     margin: 1% 5% 0% 5%;
     padding: 0% 7%;
     /* Navbar border */
@@ -68,7 +60,7 @@ nav .navbar-nav li a {
 }
 
 .navbar-inner {
-    background: var(--primary-color);
+    background: var(--dark-color);
 }
 
 .white-hamburger {
@@ -139,7 +131,7 @@ video {
     left: 0;
     width: 100vw;
     z-index: 1;
-    background: var(--primary-color);
+    background: var(--dark-color);
     opacity: 0.93;
 }
 
@@ -156,7 +148,7 @@ video {
     font-size: 4rem;
     font-weight: 600;
     margin-bottom: 0;
-    -webkit-text-stroke: 2px var(--primary-color);
+    -webkit-text-stroke: 2px var(--dark-color);
 }
 
 .header-content p {
@@ -180,11 +172,139 @@ video {
 /* VIDEO BACKGROUND END*/
 
 
+/* ABOUT START */
+
+.about {
+    background-color: #1172b6;
+    padding: 5% 0 5% 0;
+}
+
+#aboutlink {
+    display: block;
+    position: relative;
+    top: -40px;
+    visibility: hidden;
+}
+
+.about-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.description {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+}
+
+.about-card {
+    color: inherit;
+    cursor: pointer;
+    width: calc(33% - 2rem);
+    min-width: calc(33% - 2rem);
+    height: 350px;
+    min-height: 350px;
+    perspective: 1000px;
+    margin: 1rem;
+    position: relative;
+    border-radius: 0;
+    border: 2px solid var(--green-color);
+}
+
+.front,
+.back {
+    display: flex;
+    border-radius: 0;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: ease-in-out 600ms;
+}
+
+.front {
+    background-color: var(--dark-color);
+    padding: 2rem;
+    font-size: 1.618rem;
+    font-weight: 600;
+    color: #fff;
+    overflow: hidden;
+    font-family: Poppins, sans-serif;
+}
+
+.front:before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #1a9be6, #1a57e6);
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.about-card:hover .front {
+    transform: rotateX(180deg);
+}
+
+.about-card:nth-child(even):hover .front {
+    transform: rotateX(-180deg);
+}
+
+.back {
+    color: white;
+    background: var(--dark-color);
+    transform: rotateX(-180deg);
+    padding: 0 2em;
+}
+
+.about-card:hover .back {
+    transform: rotateX(0deg);
+}
+
+.about-card:nth-child(even) .back {
+    transform: rotateX(180deg);
+}
+
+.about-card:nth-child(even):hover .back {
+    transform: rotateX(0deg);
+}
+
+
+/* ABOUT END */
+
+
 /* PROJECTS START */
+
+.projects {
+    background-color: var(--dark-color);
+    padding: 5% 0 7% 0;
+}
+
+#projectslink {
+    display: block;
+    position: relative;
+    top: -120px;
+    visibility: hidden;
+}
 
 .section-heading {
     color: white;
     padding-bottom: 2%;
+    font-weight: 700;
 }
 
 .projects-container {
@@ -198,13 +318,13 @@ video {
 }
 
 .card {
-    border: 2px solid var(--secondary-color);
+    border: 2px solid var(--green-color);
     border-radius: 0;
 }
 
 .card-body {
     color: white;
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
 }
 
 .card-title {
@@ -214,7 +334,7 @@ video {
 }
 
 .list-group-item {
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
     color: white;
     /* font-weight: bold; */
 }
@@ -245,7 +365,7 @@ video {
 }
 
 .tag::before {
-    background: var(--primary-color);
+    background: var(--dark-color);
     border-radius: 10px;
     box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
     content: "";
@@ -257,7 +377,7 @@ video {
 }
 
 .tag::after {
-    background: var(--primary-color);
+    background: var(--dark-color);
     border-bottom: 13px solid transparent;
     border-left: 10px solid var(--lighter-color);
     border-top: 13px solid transparent;
@@ -271,9 +391,9 @@ video {
     border: 0;
 }
 
-.btn-success {
-    color: var(--primary-color);
-    background-color: var(--success-color);
+.btn-green {
+    color: var(--dark-color);
+    background-color: var(--green-color);
 }
 
 .btn-dark {
@@ -300,13 +420,13 @@ video {
 .secondary-button-dark a:hover {
     padding: 13px 20px;
     letter-spacing: 0.5px;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 2px solid var(--dark-color);
+    color: var(--dark-color);
 }
 
 #email {
-    border-color: var(--primary-color);
-    color: var(--primary-color);
+    border-color: var(--dark-color);
+    color: var(--dark-color);
 }
 
 #email:hover {
@@ -323,12 +443,12 @@ video {
 #contact .service-item h4 {
     margin-bottom: 25px;
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 400;
     color: #fff;
 }
 
 #contact .email {
-    background-color: var(--success-color);
+    background-color: var(--green-color);
 }
 
 #contact .github {
@@ -336,7 +456,7 @@ video {
 }
 
 .say-hi {
-    color: var(--primary-color);
+    color: var(--dark-color);
 }
 
 
@@ -437,7 +557,7 @@ video {
 
 #backToTop {
     display: inline-block;
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
     width: 40px;
     height: 40px;
     text-align: center;
@@ -461,11 +581,11 @@ video {
 
 #backToTop:hover {
     cursor: pointer;
-    background-color: #333;
+    background-color: var(--dark-color);
 }
 
 #backToTop:active {
-    background-color: #555;
+    background-color: var(--green-color);
 }
 
 #backToTop.show {
@@ -476,21 +596,19 @@ video {
 
 /* BACK TO TOP BUTTON END */
 
-.about {
-    height: 101vh;
-    background-color: var(--lighter-color);
+
+/* QUERIES START */
+
+@media screen and (max-width: 800px) {
+    .about-card {
+        width: calc(50% - 2rem);
+    }
 }
 
-.projects {
-    background-color: var(--primary-color);
-    padding: 5% 0;
-}
-
-a.anchor {
-    display: block;
-    position: relative;
-    top: -90px;
-    visibility: hidden;
+@media screen and (max-width: 500px) {
+    .about-card {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 775px) {
@@ -508,3 +626,6 @@ a.anchor {
         text-align: center;
     }
 }
+
+
+/* QUERIES END */
