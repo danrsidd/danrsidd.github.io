@@ -467,6 +467,17 @@ hr {
 /* CONTACTS END */
 
 
+/* FOOTER START  */
+
+footer {
+    color: white;
+    margin-top: 5px;
+}
+
+
+/* FOOTER END */
+
+
 /* SCROLL ARROW START */
 
 .scroll-position p {
