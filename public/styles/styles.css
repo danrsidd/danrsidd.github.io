@@ -202,6 +202,10 @@ video {
     margin-bottom: 3rem;
 }
 
+hr {
+    color: var(--green-color);
+}
+
 .about-card {
     color: inherit;
     cursor: pointer;
@@ -615,9 +619,6 @@ video {
     .scroll-position p {
         left: 43%;
     }
-}
-
-@media screen and (max-width: 775px) {
     .v-container {
         max-width: 960px;
         padding-left: 1rem;
