@@ -35,14 +35,15 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto navLinks">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#aboutlink" id="about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a
+                        <a class="nav-link" href="#projectslink" id="projects">Projects</a
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a
+                        <a class="nav-link" href="#contactlink" id="contact"
+                            >Contact</a
                         >
                     </li>
                     </li>
@@ -52,7 +53,7 @@
     </section>
     <!-- Navigation Bar End -->
     <!-- Home Page Start -->
-    <section>
+    <section id="home">
         <header class="v-header v-container">
                 <div class="fullscreen-video-wrap">
                     <video
@@ -77,8 +78,8 @@
     </section>
     <!-- Home End -->
     <!-- About Start -->
-    <section>
-                <a class="anchor" id="about"></a>
+    <section id="about">
+                <a class="anchor" id="aboutlink"></a>
                         <div class="about">
                             <h1 class="section-heading text-center">About</h1>
                             <div class="about-container">
@@ -172,7 +173,7 @@
     <!-- About End -->
     <!-- Projects Start -->
     <section class="projects">
-        <a class="anchor" id="projects"></a>
+        <a class="anchor" id="projectslink"></a>
         <div class="projects-container">
             <h1 class="section-heading text-center featured-projects">Featured Projects</h1>
             <div class="row">
@@ -208,7 +209,7 @@
                     <div class="card m-1">
                         <div class="card-body">
                             <h5 class="card-title text-center">Covid Sentiments</h5>
-                            <p class="card-text">Using Twitter sentiments to predict COVID-19-era stock market performance.</p>
+                            <p class="card-text">Using Twitter sentiments to predict early COVID-19 stock market performance.</p>
                             <ul class="list-group ">
                                 <li class="list-group-item">Technologies Used
                                     <br>
@@ -292,7 +293,7 @@
     </section>
     <!-- Projects End -->
     <!-- Contact Start -->
-    <section class="contact-section">
+    <section id="contact" class="contact-section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
@@ -300,7 +301,7 @@
                         <div class="icon">
                             <img src="/public/images/envelope.png" alt="" height="200px">
                         </div>
-                        <h4 class="say-hi" id="contact">Say Hi!</h4>
+                        <h4 class="say-hi" id="contactlink">Say Hi!</h4>
                         <br>
                         <div class="secondary-button-dark">
                             <a href="mailto:danrsidd@gmail.com" id="email">Email</a>
