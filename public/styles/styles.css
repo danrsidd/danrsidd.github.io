@@ -217,7 +217,6 @@ hr {
     margin: 1rem;
     position: relative;
     border-radius: 0;
-    border: 2px solid var(--green-color);
 }
 
 .front,
@@ -235,6 +234,7 @@ hr {
     backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: ease-in-out 600ms;
+    border: 2px solid var(--green-color);
 }
 
 .front {
