@@ -235,6 +235,7 @@ hr {
     transform-style: preserve-3d;
     transition: ease-in-out 600ms;
     border: 2px solid var(--green-color);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .front {
@@ -309,6 +310,7 @@ hr {
     color: white;
     padding-bottom: 2%;
     font-weight: 700;
+    letter-spacing: 1.5px;
 }
 
 .projects-container {
