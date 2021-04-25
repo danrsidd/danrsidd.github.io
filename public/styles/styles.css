@@ -242,7 +242,8 @@ hr {
     background-color: var(--dark-color);
     padding: 2rem;
     font-size: 1.618rem;
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 1.5px;
     color: #fff;
     overflow: hidden;
     font-family: Poppins, sans-serif;
