@@ -506,7 +506,7 @@ footer {
 
 .scroll-position p {
     position: absolute;
-    bottom: 1px;
+    bottom: 0px;
     left: 50%;
     z-index: 2;
     display: inline-block;
@@ -648,6 +648,9 @@ footer {
     .about-card {
         width: 80%;
     }
+    /* .scroll-position p {
+        display: none;
+    } */
 }
 
 @media only screen and (max-width: 775px) {
