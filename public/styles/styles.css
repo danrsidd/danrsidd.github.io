@@ -339,8 +339,8 @@ hr {
 
 .list-group-item {
     background-color: var(--dark-color);
+    border: 0;
     color: white;
-    /* font-weight: bold; */
 }
 
 .tags {
