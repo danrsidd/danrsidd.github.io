@@ -398,13 +398,21 @@ hr {
     border: 0;
 }
 
-.btn-green {
+.btn-success {
     color: var(--dark-color);
     background-color: var(--green-color);
 }
 
+.btn-success:hover {
+    background-color: #289c78;
+}
+
 .btn-dark {
     background-color: var(--lighter-color);
+}
+
+.btn-dark:hover {
+    background-color: #0b4975;
 }
 
 
