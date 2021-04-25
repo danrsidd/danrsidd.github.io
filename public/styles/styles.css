@@ -646,7 +646,7 @@ footer {
 
 @media screen and (max-width: 500px) {
     .about-card {
-        width: 100%;
+        width: 80%;
     }
 }
 
