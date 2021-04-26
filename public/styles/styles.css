@@ -333,7 +333,6 @@ hr {
 }
 
 .card-body {
-    text-align: center;
     color: white;
     background-color: var(--dark-color);
     position: relative;
